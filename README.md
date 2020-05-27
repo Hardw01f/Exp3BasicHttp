@@ -1,7 +1,11 @@
 # Exp3BasicHttp
 For Labo of Basic HTTP for Exp3 of Univ
 
-Please show Server & Client Directory README.md
+## Mission
+
+1. show Server Directory README.md
+2. show Client Directory README.md
+2. show Curl.md
 
 ## Setup
 
