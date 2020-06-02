@@ -1,4 +1,4 @@
 import requests
 
-r = requests.get('http://localhost:8080/hi')
+r = requests.get('http://13.230.219.38/hi')
 print(r.text)
