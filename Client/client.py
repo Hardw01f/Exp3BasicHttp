@@ -1,10 +1,10 @@
 import socket
 
-url = b"http://54.92.28.20/hi/"
+url = b"http://localhost:8080/hi/"
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
-    s.connect(("54.92.28.20", 80))
+    s.connect(("localhost:8080", 80))
 
     s.send(url)
     resp = s.recv(4096)

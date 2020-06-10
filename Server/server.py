@@ -6,8 +6,7 @@ dt = datetime.datetime.now()
 host = socket.gethostname()
 ip = socket.gethostbyname(host)
 print(ip)
-url = b"http://54.92.28.20/hi/"
-curl_url = "http://54.92.28.20/hi/"
+url = b"http://localhost:8080/hi/"
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((host, 80))
@@ -20,7 +19,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                 data = conn.recv(1024)
                 print(data)
 
-                if data == url or curl_url:
+                if data == url:
                     print('data : {}, addr: {}'.format(data, addr))
                     #conn.sendall(b'Received: ' + data)
                     conn.send(bytes("HTTP/1.1 200 OK\n" + "Hello: BasicHTTP!\n"
