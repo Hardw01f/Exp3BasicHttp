@@ -1,0 +1,29 @@
+#awsのec2にserver.pyを置いて, localとremoteで試したやり方
+e185729% python client.py                                                                       [~]
+HTTP/1.1 200 OK
+Hello: BasicHTTP!
+Date: Tue, 26 May 2020 06:53:14 GMT
+Content-Length: 13
+Content-Type: text/plain;
+b'10.10.30.181'
+e185729%
+
+#curlコマンドを叩いて行ったやり方
+e185729% curl -v http://54.92.28.20/hi/                                                         [~]
+*   Trying 54.92.28.20...
+* TCP_NODELAY set
+* Connected to 54.92.28.20 (54.92.28.20) port 80 (#0)
+> GET /hi/ HTTP/1.1
+> Host: 54.92.28.20
+> User-Agent: curl/7.54.0
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Hello: BasicHTTP!
+< Date: Tue, 26 May 2020 06:53:14 GMT
+< Content-Length: 13
+* transfer closed with 13 bytes remaining to read
+* stopped the pause stream!
+* Closing connection 0
+curl: (18) transfer closed with 13 bytes remaining to read
+

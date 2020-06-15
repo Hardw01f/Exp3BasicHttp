@@ -1,6 +1,12 @@
 # Exp3BasicHttp
 For Labo of Basic HTTP for Exp3 of Univ
 
+## Mission
+
+1. show Server Directory README.md
+2. show Client Directory README.md
+2. show Curl.md
+
 ## Setup
 
 1. access 'https://github.com/Hardw01f/Exp3BasicHttp'
